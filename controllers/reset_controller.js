@@ -33,7 +33,7 @@ router.post('/',function(req,res){
                 <li>User ID: `+ id + `</li>
                 <li>Token: `+ token + `</li>
             </ul>
-            <p>Login Link: <a href="http://localhost:3000/login">LOGIN</a></p>
+            <p>Login Link: <a href="http://ec2-43-204-100-108.ap-south-1.compute.amazonaws.com:3000/login">LOGIN</a></p>
             <p>You may change your password after you login under the section - ACCOUNT SETTINGS</p>
             <p><strong>This is an automatically generated mail. Please do not reply back.</strong></p>
             

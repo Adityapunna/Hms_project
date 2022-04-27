@@ -43,7 +43,7 @@ router.post("/",
 
     db.verify(req.body.username, email, token);
 
-    db.getuserid(email, function (err, result) {
+    db.getuserid(email, token, function (err, result) {
       var id = result[0].id;
       var output =
         ` 
@@ -60,7 +60,7 @@ router.post("/",
         token +
         `</li>
             </ul>
-            <p>verify Link: <a href="http://localhost:3000/verify">Verify</a></p>
+            <p>verify Link: <a href="http://ec2-43-204-100-108.ap-south-1.compute.amazonaws.com:3000/verify">Verify</a></p>
             
             <p><strong>This is an automatically generated mail. Please do not reply back.</strong></p>
             

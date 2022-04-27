@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2020 at 12:41 PM
+-- Generation Time: Mar 16, 2022 at 12:41 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.1
 
@@ -44,8 +44,8 @@ CREATE TABLE `appointment` (
 --
 
 INSERT INTO `appointment` (`id`, `patient_name`, `department`, `doctor_name`, `date`, `time`, `email`, `phone`) VALUES
-(6, 'Test', 'Orthopedics', 'B.rabbit', '26/03/2020', '10:43 AM', 'gmhs13@yopmail.com', '7865641399'),
-(10, 'Test123', 'Orthopedics', 'doc test', '18/03/2020', '1:41 AM', 'gmhs13@yopmail.com', '7865641399');
+(6, 'Test', 'Orthopedics', 'B.rabbit', '26/03/2022', '10:43 AM', 'gmhs13@yopmail.com', '7865641399'),
+(10, 'Test123', 'Orthopedics', 'doc test', '18/03/2022', '1:41 AM', 'gmhs13@yopmail.com', '7865641399');
 
 -- --------------------------------------------------------
 
@@ -120,8 +120,8 @@ CREATE TABLE `doctor` (
 --
 
 INSERT INTO `doctor` (`id`, `first_name`, `last_name`, `email`, `dob`, `gender`, `address`, `phone`, `image`, `department`, `biography`) VALUES
-(39, 'AV', 'Stranger', 'gmhs13@yopmail.com', '18/03/2020', 'male', '3125  Elkview Drive, Miami,33169', '7865641399', 'user-02.jpg', 'Intensive Care Unit (ICU)', 'dawfesgrthy'),
-(41, 'SHAHID AFRIDI', 'ZIHAD', 'gmhs13@yopmail.com', '18/03/2020', 'male', '3125  Elkview Drive, Miami,33169', '7865641399', 'reservation.png', 'Intensive Care Unit (ICU)', 'awdsaef');
+(39, 'AV', 'Stranger', 'gmhs13@yopmail.com', '18/03/2022', 'male', '3125  Elkview Drive, Miami,33169', '7865641399', 'user-02.jpg', 'Intensive Care Unit (ICU)', 'dawfesgrthy'),
+(41, 'SHAHID AFRIDI', 'ZIHAD', 'gmhs13@yopmail.com', '18/03/2022', 'male', '3125  Elkview Drive, Miami,33169', '7865641399', 'reservation.png', 'Intensive Care Unit (ICU)', 'awdsaef');
 
 -- --------------------------------------------------------
 
@@ -144,9 +144,9 @@ CREATE TABLE `employee` (
 --
 
 INSERT INTO `employee` (`id`, `name`, `email`, `contact`, `join_date`, `role`, `salary`) VALUES
-(18, 'user2', 'gmhs13@yopmail.com', '1568496', '26/03/2020', 'Receptionist', '3000'),
-(19, 'abc', 'gmhs13@yopmail.com', '7865641399', '26/03/2020', 'Pharmacist', '3000'),
-(20, 'Abc', 'gmhs13@yopmail.com', '0159653', '26/03/2020', 'Pharmacist', '651320');
+(18, 'user2', 'gmhs13@yopmail.com', '1568496', '26/03/2022', 'Receptionist', '3000'),
+(19, 'abc', 'gmhs13@yopmail.com', '7865641399', '26/03/2022', 'Pharmacist', '3000'),
+(20, 'Abc', 'gmhs13@yopmail.com', '0159653', '26/03/2022', 'Pharmacist', '651320');
 
 -- --------------------------------------------------------
 
@@ -169,7 +169,7 @@ CREATE TABLE `leaves` (
 --
 
 INSERT INTO `leaves` (`id`, `employee`, `emp_id`, `leave_type`, `date_from`, `date_to`, `reason`) VALUES
-(7, 'Isaiah L. Smith', 4, 'Medical Leave', '26/03/2020', '31/03/2020', 'acdsvfbgnh');
+(7, 'Isaiah L. Smith', 4, 'Medical Leave', '26/03/2022', '31/03/2022', 'acdsvfbgnh');
 
 -- --------------------------------------------------------
 
@@ -212,10 +212,10 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`id`, `name`, `p_date`, `expire`, `expire_end`, `price`, `quantity`) VALUES
-(4, 'Napa', '20/03/2020', '2', '19/03/2020', '8', '100'),
-(8, 'Seclo', '24/03/2020', '2', '24/03/2020', '5', '200'),
-(9, 'Napa', '24/03/2020', '1 ', '19/03/2020', '10', '20'),
-(10, 'max', '11/03/2020', '1 ', '12/03/2020', '10', '100');
+(4, 'Napa', '20/03/2022', '2', '19/03/2022', '8', '100'),
+(8, 'Seclo', '24/03/2022', '2', '24/03/2022', '5', '200'),
+(9, 'Napa', '24/03/2022', '1 ', '19/03/2022', '10', '20'),
+(10, 'max', '11/03/2022', '1 ', '12/03/2022', '10', '100');
 
 -- --------------------------------------------------------
 

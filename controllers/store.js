@@ -14,6 +14,7 @@ router.get('*', function(req, res, next){
 
 router.get('/',function(req,res){
     db.getallmed(function(err,result){
+        console.log(result);
         res.render('store.ejs',{list : result});
     })
     

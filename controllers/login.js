@@ -17,6 +17,13 @@ router.get('/', function(req ,res){
 });
 
 
+// var con = mysql.createConnection({
+//     host: "hms-project.cvcluxy2mugp.ap-south-1.rds.amazonaws.com",
+//     user: "admin",
+//     password: "hmsproject123",
+//     database: "hms project",
+//   });
+
 var con = mysql.createConnection({
     host: "hms-project.cvcluxy2mugp.ap-south-1.rds.amazonaws.com",
     user: "admin",
@@ -26,7 +33,7 @@ var con = mysql.createConnection({
 
 // var con = mysql.createConnection({
 
-//     host : 'localhost',
+//     host : 'ec2-43-204-100-108.ap-south-1.compute.amazonaws.com',
 //     user : 'root',
 //     password : '',
 //     database : 'nodelogin'

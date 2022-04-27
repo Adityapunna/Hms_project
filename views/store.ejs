@@ -143,11 +143,9 @@
 						<li>
                             <a href="/doctors"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                         </li>
+                      
                         <li>
-                            <a href="/patients"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
-                        </li>
-                        <li>
-                            <a href="/appointment"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
+                            <a href="/appointment"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                         </li>
                        
                         <li>
@@ -171,14 +169,7 @@
 						</li>
                        
                         
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-envelope"></i> <span> Email</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="/compose">Compose Mail</a></li>
-                                <li><a href="/inbox">Inbox</a></li>
-                                
-                            </ul>
-                        </li>
+                        
                        
 						<li class="active">
 							<a href="/store"><i class="fa fa-cube"></i> <span>Medicine Store</span></a>
@@ -232,7 +223,7 @@
                                         <th>Medicine name</th>
                                         <th>Purchase Date</th>
                                         <th>Expire</th>
-                                        <th>Expire End</th>
+                                        <!-- <th>Expire End</th> -->
                                         <th>Price</th>
                                         <th>Quantity</th>
                                         
@@ -241,19 +232,19 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% for (var i = list.length; i>0 ; i--){ %>
+                                    <% for (var i = 0; i<list.length ; i++){ %>
                                     <tr>
                                         
                                         <td>
-                                            <strong> <%= list[0].id %> </strong>
+                                            <strong> <%= list[i].id %> </strong>
                                         </td>
-                                        <td><%= list[0].name %></td>
-                                        <td><%= list[0].p_date %></td>
-                                        <td><%= list[0].expire %> years</td>
-                                        <td><%= list[0].expire_end %></td>
-                                        <td><%= list[0].price %></td>
+                                        <td><%= list[i].name %></td>
+                                        <td><%= list[i].p_date %></td>
+                                        <td><%= list[i].expire %> years</td>
+                                        <!-- <td><%= list[i].expire_end %></td> -->
+                                        <td><%= list[i].price %></td>
                                         <td class="text-center">
-                                            <%= list[0].quantity %>
+                                            <%= list[i].quantity %>
                                         </td>
                                         <td class="text-right">
                                             <div class="dropdown dropdown-action">

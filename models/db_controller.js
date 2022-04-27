@@ -10,7 +10,7 @@ var con = mysql.createConnection({
 });
 
 // var con = mysql.createConnection({
-//   host: "localhost",
+//   host: "ec2-43-204-100-108.ap-south-1.compute.amazonaws.com",
 //   user: "admin",
 //   password: "hms-project123",
 //   database: "hms-project",
@@ -39,8 +39,8 @@ module.exports.signup = function (username, email, password, status, callback) {
   con.query(query, callback);
 };
 
-module.exports.getuserid = function (email, callback) {
-  var query = "select *from verify where email = '" + email + "' ";
+module.exports.getuserid = function (email, token, callback) {
+  var query = "select *from verify where email = '" + email + "' "+ "and token='"+token+"'";
   con.query(query, callback);
 };
 
@@ -433,7 +433,7 @@ module.exports.editmed = function (
 };
 
 module.exports.getallmed = function (callback) {
-  var query = "select *from store order by id desc";
+  var query = "select * from store";
   console.log(query);
   con.query(query, callback);
 };

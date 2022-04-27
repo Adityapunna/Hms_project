@@ -143,11 +143,9 @@
 						<li class="active">
                             <a href="/doctors"><i class="fa fa-user-md"></i> <span>Doctors</span></a>
                         </li>
+                      
                         <li>
-                            <a href="/patients"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
-                        </li>
-                        <li>
-                            <a href="/appointment"><i class="fa fa-calendar"></i> <span>Appointments</span></a>
+                            <a href="/appointment"><i class="fa fa-wheelchair"></i> <span>Patients</span></a>
                         </li>
                        
                         <li>
@@ -171,14 +169,7 @@
 						</li>
                        
                         
-                        <li class="submenu">
-                            <a href="#"><i class="fa fa-envelope"></i> <span> Email</span> <span class="menu-arrow"></span></a>
-                            <ul style="display: none;">
-                                <li><a href="/compose">Compose Mail</a></li>
-                                <li><a href="/inbox">Inbox</a></li>
-                                
-                            </ul>
-                        </li>
+                        
                        
 						<li>
 							<a href="/store"><i class="fa fa-cube"></i> <span>Medicine Store</span></a>
@@ -204,7 +195,7 @@
                         <h4 class="page-title">Doctors</h4>
                     </div>
                     <div class="col-sm-8 col-9 text-right m-b-20">
-                        <a href="http://localhost:3000/doctors/add_doctor" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
+                        <a href="http://ec2-43-204-100-108.ap-south-1.compute.amazonaws.com:3000/doctors/add_doctor" class="btn btn-primary btn-rounded float-right"><i class="fa fa-plus"></i> Add Doctor</a>
                     </div>
                     <form action="" method="POST">
                     <div class="col-sm-6 col-md-12">
@@ -262,8 +253,8 @@
                                             <div class="dropdown dropdown-action">
                                                 <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                                                 <div class="dropdown-menu dropdown-menu-right">
-                                                    <a class="dropdown-item" href="http://localhost:3000/doctors/edit_doctor/<%= list[i].id %>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                    <a class="dropdown-item" href="http://localhost:3000/doctors/delete_doctor/<%= list[i].id %>" ><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                    <a class="dropdown-item" href="http://ec2-43-204-100-108.ap-south-1.compute.amazonaws.com:3000/doctors/edit_doctor/<%= list[i].id %>"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="http://ec2-43-204-100-108.ap-south-1.compute.amazonaws.com:3000/doctors/delete_doctor/<%= list[i].id %>" ><i class="fa fa-trash-o m-r-5"></i> Delete</a>
                                                 </div>
                                             </div>
                                         </td>
